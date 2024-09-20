@@ -20,17 +20,16 @@ app.use(express.urlencoded({ extended: true }));
 // use routes
 
 
-// error
-app.use((err, req, res, next) => {
-    console.error(err);
-    res.status(500).json({ message: 'Internal Server Error' });
-});
-
 // handle 404
 app.use('*', (req, res) => {
     res.status(404).json({ message: 'Page is not found' });
 });
 
+// error
+app.use((err, req, res, next) => {
+    console.error(err);
+    res.status(500).json({ message: 'Internal Server Error' });
+});
 // listen
 app.listen(PORT, () => {
     console.log(`Server is up and running on port : ${PORT}`);
