@@ -22,7 +22,6 @@ Project/
 |   ├── validatePasswords.js # Utility to validate password complexity
 |-- views/
 |   |--- 404.ejs
-|-- .babelrc          # Babel configuration for ES6 support
 |-- .env              # Environment variables configuration
 |-- index.js          # Entry point of the application
 |-- package.json      # Dependencies and scripts
