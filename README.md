@@ -2,6 +2,10 @@
 
 This project serves as a backend template for a Node.js application without a database. It is organized into several key directories and files, each with a specific role. Below is a detailed explanation of the structure and the purpose of each component within the project.
 
+## Note
+
+Please go to `.gitignore` and uncomment `.env`, `logs` and `.vscode`, because those Must be included in `.gitignore`.
+
 ## Project Structure
 
 ```txt
