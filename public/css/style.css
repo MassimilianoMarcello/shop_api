@@ -1,0 +1,104 @@
+
+
+
+
+
+
+
+/* procucts.ejs */
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap; /* Consente ai prodotti di andare a capo se non c'è spazio */
+    justify-content: space-around; /* Distribuisce i prodotti in modo uniforme */
+    padding: 20px;
+}
+
+.product {
+    border: 1px solid #ccc; /* Bordo grigio chiaro per i prodotti */
+    border-radius: 5px; /* Angoli arrotondati */
+    padding: 15px;
+    margin: 10px;
+    width: 200px; /* Larghezza fissa per ogni prodotto */
+    text-align: center; /* Centratura del contenuto */
+    transition: box-shadow 0.3s ease; /* Transizione per l'effetto hover */
+    background-color: #fff; /* Sfondo bianco per il prodotto */
+}
+
+.product img {
+    max-width: 100%; /* Mantiene l'immagine responsiva */
+    height: auto; /* Mantiene le proporzioni dell'immagine */
+    border-bottom: 1px solid #ccc; /* Bordo inferiore per separare l'immagine dal testo */
+}
+
+.product h3 {
+    margin: 10px 0; /* Margini sopra e sotto il titolo */
+    font-size: 1.2em; /* Dimensione del font del titolo */
+}
+
+.product p {
+    margin: 5px 0; /* Margini per le descrizioni e i prezzi */
+    color: #333; /* Colore del testo */
+}
+
+.product:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Effetto ombra quando si passa il mouse */
+}
+
+/*form add product */
+
+.product-form {
+    max-width: 500px;
+    margin: 1rem auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-left: 4rem;
+    text-align: left;
+
+}
+
+input, textarea {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin:1rem ;
+}
+
+button.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.submit-btn:hover {
+    background-color: #45a049;
+}
+
+/* user register form */
+
+.register-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
