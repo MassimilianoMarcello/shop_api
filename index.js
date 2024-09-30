@@ -1,5 +1,6 @@
 import path, { dirname } from 'path';
 import { fileURLToPath } from 'url';
+import bodyParser from 'body-parser';
 
 import express from 'express';
 import dotenv from 'dotenv';

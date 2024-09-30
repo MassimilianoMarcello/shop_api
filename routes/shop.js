@@ -1,22 +1,21 @@
 import express from 'express';
 import shopControllers from '../controllers/shop.js';
+import verifyToken from '../middleware/verifyToken.js';
 
 const router = express.Router();
 const { getAllProducts, getProductById, getAddProductForm, addProduct } =
     shopControllers;
 
-// router.get('/products', (req, res) => {
-//     res.render('layout', { title: 'Products', body: 'includes/products' });
-// });
+
 
 router.get('/products',getAllProducts );
 
 router.get('/products/:id',getProductById );
 
-// per dare il form
-router.get('/add-product', getAddProductForm);
+// give a form to add prodicts
+router.get('/add-product', verifyToken, getAddProductForm);
 
-// per aggiungere il prodotto
+// add a product
 router.post('/add-product',addProduct );
 
 

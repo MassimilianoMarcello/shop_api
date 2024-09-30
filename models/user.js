@@ -3,25 +3,24 @@ import { v4 as Id } from 'uuid';
 const users = [
     {
         id: Id(),
-        email: 'massi8@gmail.com',
-        password: 'password'
+        email: 'example@example.com',
+        password: 'Abcdef1!'
     }
 ];
 
 class User {
-    static getByEmail(){
-        return users.find(user=>user.email===email)
+    static getByEmail(email) {  // Passa email come parametro
+        return users.find(user => user.email === email);
     }
 
-    static add(user){
-        const newUser={
-            id:Id(),
+    static add(user) {
+        const newUser = {
+            id: Id(),
             ...user
-        }
-        users.push(newUser)
-        return newUser
+        };
+        users.push(newUser);
+        return newUser;
     }
-    }
+}
 
-
-    export default User
+export default User;
