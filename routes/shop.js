@@ -13,7 +13,7 @@ router.get('/products',getAllProducts );
 router.get('/products/:id',getProductById );
 
 // give a form to add prodicts
-router.get('/add-product', verifyToken, getAddProductForm);
+router.get('/add-product', getAddProductForm);
 
 // add a product
 router.post('/add-product',addProduct );

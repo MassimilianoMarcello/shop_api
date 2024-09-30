@@ -3,7 +3,7 @@ import { v4 as Id } from 'uuid';
 const users = [
     {
         id: Id(),
-        email: 'example@example.com',
+        email: 'examples@example.com',
         password: 'Abcdef1!'
     }
 ];

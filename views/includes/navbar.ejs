@@ -1,10 +1,22 @@
 <nav>
     <ul>
         <li><a href="/api/products">Home</a></li>
-        <li>Products</li>
-        <li><a href="/api/add-product">Add New Product</a></li>
-        <li>Login</li>
-        <li><a href="/api/register">Register New Account</a></li>
-        <li>Logout</li>
+        <% if(token) {%>
+            <li><a href="/api/add-product">Add New Product</a></li>
+            <li>
+                <form action="/api/logout" method="POST">
+                    <button type="submit">Logout</button>
+                </form>
+            </li>
+            <% }else { %>
+
+                <li><a href="/api/login">Login</a></li>
+                <li><a href="/api/register">Register New Account</a></li>
+
+
+                <% } %>
+      
+      
+  
     </ul>
 </nav>
